@@ -1,115 +1,152 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
+/* Basic Formatting */
 * {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    text-transform:uppercase;
-    width:100%;
+    -webkit-touch-callout: none;    /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;      /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color: #fff;
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
-/* Portrait layout (default) */
-.app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+/* Shift Font */
+@font-face {
+	font-family: 'Shift';
+	src: url('../lib/shift.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
-    }
+
+/* Header */
+#header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #3e3e3e;
+    background: #fff;
+    padding: 25px 15px 10px 15px;
+    box-shadow: 0 3px 0 rgba(255, 255, 255, 0.4);
 }
 
-h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
+#header .container {
+    position: relative;
+    width: 100%;
 }
 
-.event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
+#header .logo {
+    width: 100px;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Shift;
 }
 
-.event.listening {
-    background-color:#333333;
-    display:block;
+#header .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 22px;
 }
 
-.event.received {
-    background-color:#4B946A;
-    display:none;
+#header .post {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 22px;
 }
 
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
+
+/* Events */
+#events {
+    margin-top: 55px;
+    padding: 0;
+    color: #fff;
 }
- 
-@-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
+
+#events .event {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.9);
 }
- 
-.blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
+
+#events .event:last-child {
+    border: none;
+}
+
+#events .event .darkener {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .15);
+    background: -webkit-linear-gradient(0, rgba(0, 0, 0, .3), rgba(0, 0, 0, .15));
+    background: -moz-linear-gradient(0, rgba(0, 0, 0, .3), rgba(0, 0, 0, .15));
+    background: -ms-linear-gradient(0, rgba(0, 0, 0, .3), rgba(0, 0, 0, .15));
+    background: -o-linear-gradient(0, rgba(0, 0, 0, .3), rgba(0, 0, 0, .15));
+    background: linear-gradient(0, rgba(0, 0, 0, .3), rgba(0, 0, 0, .15));
+}
+
+#events .event .hero {
+    position: relative;
+    z-index: 2;
+    font-family: Shift;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 30px;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+#events .event .footer {
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    right: 15px;
+    bottom: 10px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#events .event .footer .location {
+    float: left;
+}
+
+#events .event .footer .chatter,
+#events .event .footer .attendees {
+    float: right;
+}
+
+#events .event .footer .attendees .attendee {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+#events .event .footer .attendees .next {
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;
 }
