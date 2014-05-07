@@ -14,11 +14,13 @@
 
         <!-- Start of Javascript -->
         <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/zepto.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/center.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            app.initialize();
+            $(function() {
+                app.initialize();
+            });
         </script>
     </head>
     <body>
@@ -31,14 +33,14 @@
             </div>
         </div>
         <div id="events">
-            <div class="event" style="background-image: url('https://scontent-b-sjc.xx.fbcdn.net/hphotos-ash3/t1.0-9/10169329_10203913109215922_414375286691091430_n.jpg');">
+            <div class="event">
+                <div class="image" data-image="https://scontent-b-sjc.xx.fbcdn.net/hphotos-ash3/t1.0-9/10169329_10203913109215922_414375286691091430_n.jpg"></div>
                 <div class="darkener"></div>
                 <div class="hero">Beach day!!!</div>
                 <div class="footer">
                     <div class="location">Santa Cruz</div>
                     <div class="attendees">
                         <div class="attendee" style="background-image: url('https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/1240604_359327467532968_196202760_n.jpg')"></div>
-                        <div class="attendee" style="background-image: url('https://scontent-b-sjc.xx.fbcdn.net/hphotos-prn2/t1.0-9/1625724_10203348015047119_469588628_n.jpg')"></div>
                         <div class="attendee next">···</div>
                     </div>
                     <div class="chatter">
@@ -46,18 +48,48 @@
                     </div>
                 </div>
             </div>
-            <div class="event" style="background-image: url('https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash3/t1.0-9/10325369_10152009984131436_3550462462739132196_n.jpg');">
+            <div class="event">
+                <div class="image" data-image="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash3/t1.0-9/10325369_10152009984131436_3550462462739132196_n.jpg"></div>
                 <div class="darkener"></div>
                 <div class="hero">Now everyone take out your dumb gopros</div>
                 <div class="footer">
                     <div class="location">San Jose</div>
                     <div class="attendees">
                         <div class="attendee" style="background-image: url('https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/1240604_359327467532968_196202760_n.jpg')"></div>
-                        <div class="attendee" style="background-image: url('https://scontent-b-sjc.xx.fbcdn.net/hphotos-prn2/t1.0-9/1625724_10203348015047119_469588628_n.jpg')"></div>
                         <div class="attendee next">···</div>
                     </div>
                     <div class="chatter">
                         19 <span class="fa fa-comment"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="image" data-image="http://i.telegraph.co.uk/multimedia/archive/01451/skateboard_1451004i.jpg"></div>
+                <div class="darkener"></div>
+                <div class="hero">Skating Hard</div>
+                <div class="footer">
+                    <div class="location">Los Angeles</div>
+                    <div class="attendees">
+                        <div class="attendee" style="background-image: url('https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/1240604_359327467532968_196202760_n.jpg')"></div>
+                        <div class="attendee next">···</div>
+                    </div>
+                    <div class="chatter">
+                        105 <span class="fa fa-comment"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="image" data-image="http://www.ramonasentinel.com/wp-content/blogs.dir/12/files/2013/07/ComicCon-037.WEB_.jpg"></div>
+                <div class="darkener"></div>
+                <div class="hero">Comic con costumes pose</div>
+                <div class="footer">
+                    <div class="location">Los Angeles</div>
+                    <div class="attendees">
+                        <div class="attendee" style="background-image: url('https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/1240604_359327467532968_196202760_n.jpg')"></div>
+                        <div class="attendee next">···</div>
+                    </div>
+                    <div class="chatter">
+                        15 <span class="fa fa-comment"></span>
                     </div>
                 </div>
             </div>

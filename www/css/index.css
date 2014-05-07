@@ -53,19 +53,29 @@ body {
     font-family: Shift;
 }
 
-#header .menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 22px;
-}
-
+#header .menu,
 #header .post {
     position: absolute;
     top: 0;
-    right: 0;
     font-size: 22px;
 }
+
+#header .menu:active,
+#header .post:active {
+    color: #4586F5;
+}
+
+#header .menu {
+    left: 0;
+}
+
+#header .post {
+    right: 0;
+}
+
+
+
+
 
 
 /* Events */
@@ -78,10 +88,9 @@ body {
 #events .event {
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 250px;
     overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #ededed;
     border-bottom: solid 1px rgba(0, 0, 0, 0.9);
 }
 
@@ -89,24 +98,39 @@ body {
     border: none;
 }
 
-#events .event .darkener {
+#events .event .image {
     position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity .4s ease 0;
+}
+
+#events .event .image.visible {
+    opacity: 1;
+}
+
+
+#events .event .darkener {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: rgba(0, 0, 0, .15);
-    background: -webkit-linear-gradient(0, rgba(0, 0, 0, .3), rgba(0, 0, 0, .15));
-    background: -moz-linear-gradient(0, rgba(0, 0, 0, .3), rgba(0, 0, 0, .15));
-    background: -ms-linear-gradient(0, rgba(0, 0, 0, .3), rgba(0, 0, 0, .15));
-    background: -o-linear-gradient(0, rgba(0, 0, 0, .3), rgba(0, 0, 0, .15));
-    background: linear-gradient(0, rgba(0, 0, 0, .3), rgba(0, 0, 0, .15));
+    background: -webkit-linear-gradient(0, rgba(0, 0, 0, .5), rgba(0, 0, 0, .15));
+    background: linear-gradient(0, rgba(0, 0, 0, .5), rgba(0, 0, 0, .15));
 }
 
 #events .event .hero {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     font-family: Shift;
     font-size: 30px;
     text-align: center;
@@ -116,16 +140,21 @@ body {
 
 #events .event .footer {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     left: 15px;
     right: 15px;
     bottom: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.8);
 }
 
 #events .event .footer .location {
     float: left;
+}
+
+#events .event .footer .location,
+#events .event .footer .chatter {
+    margin-top: 2px;
 }
 
 #events .event .footer .chatter,
