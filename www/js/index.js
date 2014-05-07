@@ -2,6 +2,10 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.eventsAlign();
+        this.bindEvents();
+    },
+    bindEvents: function() {
+        $("#header .post").click(this.openCamera);
     },
     eventsAlign: function() {
         //Temp until dynamic pulling data
@@ -20,5 +24,21 @@ var app = {
                 }, 100);
             };
         });
+    },
+    openCamera: function() {
+        navigator.camera.getPicture(onSuccess, onFail, {
+            quality: 100,
+            allowEdit: true,
+            destinationType: Camera.DestinationType.FILE_URI,
+            sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
+        });
+
+        function onSuccess(imageData) {
+            alert('success because: ' + imageData);
+        }
+
+        function onFail(message) {
+            alert('Failed because: ' + message);
+        }
     }
 };
