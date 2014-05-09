@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7453D002-EDB7-4CCF-B1BB-90BAAB503A84</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Moment</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4A2E8AB0-61C0-4700-867E-FBF754D26667</key>
+		<string>ssh://github.com/bvallelunga/moment-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Moment.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4A2E8AB0-61C0-4700-867E-FBF754D26667</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/bvallelunga/moment-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4A2E8AB0-61C0-4700-867E-FBF754D26667</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4A2E8AB0-61C0-4700-867E-FBF754D26667</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Moment (iOS)</string>
+		</dict>
+	</array>
+</dict>
+</plist>

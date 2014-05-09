@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3DC6905191C96C800779014 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DC6904191C96C800779014 /* Foundation.framework */; };
+		D3DC6907191C96C800779014 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DC6906191C96C800779014 /* CoreGraphics.framework */; };
+		D3DC6909191C96C800779014 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DC6908191C96C800779014 /* UIKit.framework */; };
+		D3DC690F191C96C800779014 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3DC690D191C96C800779014 /* InfoPlist.strings */; };
+		D3DC6911191C96C800779014 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DC6910191C96C800779014 /* main.m */; };
+		D3DC6915191C96C800779014 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DC6914191C96C800779014 /* AppDelegate.m */; };
+		D3DC6918191C96C800779014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DC6916191C96C800779014 /* Main.storyboard */; };
+		D3DC691B191C96C800779014 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DC691A191C96C800779014 /* ViewController.m */; };
+		D3DC691D191C96C800779014 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3DC691C191C96C800779014 /* Images.xcassets */; };
+		D3DC6924191C96C800779014 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DC6923191C96C800779014 /* XCTest.framework */; };
+		D3DC6925191C96C800779014 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DC6904191C96C800779014 /* Foundation.framework */; };
+		D3DC6926191C96C800779014 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DC6908191C96C800779014 /* UIKit.framework */; };
+		D3DC692E191C96C800779014 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3DC692C191C96C800779014 /* InfoPlist.strings */; };
+		D3DC6930191C96C800779014 /* MomentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DC692F191C96C800779014 /* MomentTests.m */; };
+		D3DC694C191C99EC00779014 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DC693C191C99EC00779014 /* Icon-40.png */; };
+		D3DC694D191C99EC00779014 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DC693D191C99EC00779014 /* Icon-40@2x.png */; };
+		D3DC694E191C99EC00779014 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DC693E191C99EC00779014 /* Icon-60@2x.png */; };
+		D3DC694F191C99EC00779014 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DC693F191C99EC00779014 /* Icon-Small.png */; };
+		D3DC6950191C99EC00779014 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DC6940191C99EC00779014 /* Icon-Small@2x.png */; };
+		D3DC6951191C99EC00779014 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DC6941191C99EC00779014 /* Icon.png */; };
+		D3DC6952191C99EC00779014 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DC6942191C99EC00779014 /* Icon@2x.png */; };
+		D3DC6953191C99EC00779014 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = D3DC6943191C99EC00779014 /* iTunesArtwork */; };
+		D3DC6954191C99EC00779014 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = D3DC6944191C99EC00779014 /* iTunesArtwork@2x */; };
+		D3DC6955191C99EC00779014 /* Logo.psd in Resources */ = {isa = PBXBuildFile; fileRef = D3DC6945191C99EC00779014 /* Logo.psd */; };
+		D3DC6956191C99EC00779014 /* splash-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DC6948191C99EC00779014 /* splash-Large.png */; };
+		D3DC6957191C99EC00779014 /* splash-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DC6949191C99EC00779014 /* splash-Small.png */; };
+		D3DC6958191C99EC00779014 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DC694A191C99EC00779014 /* splash.png */; };
+		D3DC6959191C99EC00779014 /* Splash.psd in Resources */ = {isa = PBXBuildFile; fileRef = D3DC694B191C99EC00779014 /* Splash.psd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3DC6927191C96C800779014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3DC68F9191C96C800779014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3DC6900191C96C800779014;
+			remoteInfo = Moment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3DC6901191C96C800779014 /* Moment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3DC6904191C96C800779014 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D3DC6906191C96C800779014 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D3DC6908191C96C800779014 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D3DC690C191C96C800779014 /* Moment-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Moment-Info.plist"; sourceTree = "<group>"; };
+		D3DC690E191C96C800779014 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3DC6910191C96C800779014 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3DC6912191C96C800779014 /* Moment-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Moment-Prefix.pch"; sourceTree = "<group>"; };
+		D3DC6913191C96C800779014 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D3DC6914191C96C800779014 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D3DC6917191C96C800779014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3DC6919191C96C800779014 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D3DC691A191C96C800779014 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D3DC691C191C96C800779014 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D3DC6922191C96C800779014 /* MomentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3DC6923191C96C800779014 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D3DC692B191C96C800779014 /* MomentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MomentTests-Info.plist"; sourceTree = "<group>"; };
+		D3DC692D191C96C800779014 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3DC692F191C96C800779014 /* MomentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MomentTests.m; sourceTree = "<group>"; };
+		D3DC693C191C99EC00779014 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		D3DC693D191C99EC00779014 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		D3DC693E191C99EC00779014 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		D3DC693F191C99EC00779014 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		D3DC6940191C99EC00779014 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		D3DC6941191C99EC00779014 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D3DC6942191C99EC00779014 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		D3DC6943191C99EC00779014 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		D3DC6944191C99EC00779014 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		D3DC6945191C99EC00779014 /* Logo.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Logo.psd; sourceTree = "<group>"; };
+		D3DC6948191C99EC00779014 /* splash-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-Large.png"; sourceTree = "<group>"; };
+		D3DC6949191C99EC00779014 /* splash-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-Small.png"; sourceTree = "<group>"; };
+		D3DC694A191C99EC00779014 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		D3DC694B191C99EC00779014 /* Splash.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Splash.psd; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3DC68FE191C96C800779014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DC6907191C96C800779014 /* CoreGraphics.framework in Frameworks */,
+				D3DC6909191C96C800779014 /* UIKit.framework in Frameworks */,
+				D3DC6905191C96C800779014 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DC691F191C96C800779014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DC6924191C96C800779014 /* XCTest.framework in Frameworks */,
+				D3DC6926191C96C800779014 /* UIKit.framework in Frameworks */,
+				D3DC6925191C96C800779014 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3DC68F8191C96C800779014 = {
+			isa = PBXGroup;
+			children = (
+				D3DC6939191C99EC00779014 /* Resources */,
+				D3DC690A191C96C800779014 /* Moment */,
+				D3DC6929191C96C800779014 /* MomentTests */,
+				D3DC6903191C96C800779014 /* Frameworks */,
+				D3DC6902191C96C800779014 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3DC6902191C96C800779014 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3DC6901191C96C800779014 /* Moment.app */,
+				D3DC6922191C96C800779014 /* MomentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3DC6903191C96C800779014 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3DC6904191C96C800779014 /* Foundation.framework */,
+				D3DC6906191C96C800779014 /* CoreGraphics.framework */,
+				D3DC6908191C96C800779014 /* UIKit.framework */,
+				D3DC6923191C96C800779014 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3DC690A191C96C800779014 /* Moment */ = {
+			isa = PBXGroup;
+			children = (
+				D3DC6913191C96C800779014 /* AppDelegate.h */,
+				D3DC6914191C96C800779014 /* AppDelegate.m */,
+				D3DC6916191C96C800779014 /* Main.storyboard */,
+				D3DC6919191C96C800779014 /* ViewController.h */,
+				D3DC691A191C96C800779014 /* ViewController.m */,
+				D3DC691C191C96C800779014 /* Images.xcassets */,
+				D3DC690B191C96C800779014 /* Supporting Files */,
+			);
+			path = Moment;
+			sourceTree = "<group>";
+		};
+		D3DC690B191C96C800779014 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3DC690C191C96C800779014 /* Moment-Info.plist */,
+				D3DC690D191C96C800779014 /* InfoPlist.strings */,
+				D3DC6910191C96C800779014 /* main.m */,
+				D3DC6912191C96C800779014 /* Moment-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3DC6929191C96C800779014 /* MomentTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3DC692F191C96C800779014 /* MomentTests.m */,
+				D3DC692A191C96C800779014 /* Supporting Files */,
+			);
+			path = MomentTests;
+			sourceTree = "<group>";
+		};
+		D3DC692A191C96C800779014 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3DC692B191C96C800779014 /* MomentTests-Info.plist */,
+				D3DC692C191C96C800779014 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3DC6939191C99EC00779014 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3DC693A191C99EC00779014 /* Icons */,
+				D3DC6945191C99EC00779014 /* Logo.psd */,
+				D3DC6946191C99EC00779014 /* Splash */,
+				D3DC694B191C99EC00779014 /* Splash.psd */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D3DC693A191C99EC00779014 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				D3DC693B191C99EC00779014 /* iPhone */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		D3DC693B191C99EC00779014 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				D3DC693C191C99EC00779014 /* Icon-40.png */,
+				D3DC693D191C99EC00779014 /* Icon-40@2x.png */,
+				D3DC693E191C99EC00779014 /* Icon-60@2x.png */,
+				D3DC693F191C99EC00779014 /* Icon-Small.png */,
+				D3DC6940191C99EC00779014 /* Icon-Small@2x.png */,
+				D3DC6941191C99EC00779014 /* Icon.png */,
+				D3DC6942191C99EC00779014 /* Icon@2x.png */,
+				D3DC6943191C99EC00779014 /* iTunesArtwork */,
+				D3DC6944191C99EC00779014 /* iTunesArtwork@2x */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		D3DC6946191C99EC00779014 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				D3DC6947191C99EC00779014 /* iPhone */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		D3DC6947191C99EC00779014 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				D3DC6948191C99EC00779014 /* splash-Large.png */,
+				D3DC6949191C99EC00779014 /* splash-Small.png */,
+				D3DC694A191C99EC00779014 /* splash.png */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3DC6900191C96C800779014 /* Moment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3DC6933191C96C800779014 /* Build configuration list for PBXNativeTarget "Moment" */;
+			buildPhases = (
+				D3DC68FD191C96C800779014 /* Sources */,
+				D3DC68FE191C96C800779014 /* Frameworks */,
+				D3DC68FF191C96C800779014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Moment;
+			productName = Moment;
+			productReference = D3DC6901191C96C800779014 /* Moment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3DC6921191C96C800779014 /* MomentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3DC6936191C96C800779014 /* Build configuration list for PBXNativeTarget "MomentTests" */;
+			buildPhases = (
+				D3DC691E191C96C800779014 /* Sources */,
+				D3DC691F191C96C800779014 /* Frameworks */,
+				D3DC6920191C96C800779014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3DC6928191C96C800779014 /* PBXTargetDependency */,
+			);
+			name = MomentTests;
+			productName = MomentTests;
+			productReference = D3DC6922191C96C800779014 /* MomentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3DC68F9191C96C800779014 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Brian Vallelunga";
+				TargetAttributes = {
+					D3DC6921191C96C800779014 = {
+						TestTargetID = D3DC6900191C96C800779014;
+					};
+				};
+			};
+			buildConfigurationList = D3DC68FC191C96C800779014 /* Build configuration list for PBXProject "Moment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3DC68F8191C96C800779014;
+			productRefGroup = D3DC6902191C96C800779014 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3DC6900191C96C800779014 /* Moment */,
+				D3DC6921191C96C800779014 /* MomentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3DC68FF191C96C800779014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DC6959191C99EC00779014 /* Splash.psd in Resources */,
+				D3DC6954191C99EC00779014 /* iTunesArtwork@2x in Resources */,
+				D3DC6951191C99EC00779014 /* Icon.png in Resources */,
+				D3DC694C191C99EC00779014 /* Icon-40.png in Resources */,
+				D3DC694F191C99EC00779014 /* Icon-Small.png in Resources */,
+				D3DC691D191C96C800779014 /* Images.xcassets in Resources */,
+				D3DC690F191C96C800779014 /* InfoPlist.strings in Resources */,
+				D3DC6918191C96C800779014 /* Main.storyboard in Resources */,
+				D3DC6953191C99EC00779014 /* iTunesArtwork in Resources */,
+				D3DC6958191C99EC00779014 /* splash.png in Resources */,
+				D3DC6956191C99EC00779014 /* splash-Large.png in Resources */,
+				D3DC6950191C99EC00779014 /* Icon-Small@2x.png in Resources */,
+				D3DC6955191C99EC00779014 /* Logo.psd in Resources */,
+				D3DC694D191C99EC00779014 /* Icon-40@2x.png in Resources */,
+				D3DC6957191C99EC00779014 /* splash-Small.png in Resources */,
+				D3DC694E191C99EC00779014 /* Icon-60@2x.png in Resources */,
+				D3DC6952191C99EC00779014 /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DC6920191C96C800779014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DC692E191C96C800779014 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3DC68FD191C96C800779014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DC691B191C96C800779014 /* ViewController.m in Sources */,
+				D3DC6915191C96C800779014 /* AppDelegate.m in Sources */,
+				D3DC6911191C96C800779014 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DC691E191C96C800779014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DC6930191C96C800779014 /* MomentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3DC6928191C96C800779014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3DC6900191C96C800779014 /* Moment */;
+			targetProxy = D3DC6927191C96C800779014 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3DC690D191C96C800779014 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3DC690E191C96C800779014 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D3DC6916191C96C800779014 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3DC6917191C96C800779014 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3DC692C191C96C800779014 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3DC692D191C96C800779014 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3DC6931191C96C800779014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D3DC6932191C96C800779014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3DC6934191C96C800779014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Moment/Moment-Prefix.pch";
+				INFOPLIST_FILE = "Moment/Moment-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D3DC6935191C96C800779014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Moment/Moment-Prefix.pch";
+				INFOPLIST_FILE = "Moment/Moment-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D3DC6937191C96C800779014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Moment.app/Moment";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Moment/Moment-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MomentTests/MomentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D3DC6938191C96C800779014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Moment.app/Moment";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Moment/Moment-Prefix.pch";
+				INFOPLIST_FILE = "MomentTests/MomentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3DC68FC191C96C800779014 /* Build configuration list for PBXProject "Moment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DC6931191C96C800779014 /* Debug */,
+				D3DC6932191C96C800779014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3DC6933191C96C800779014 /* Build configuration list for PBXNativeTarget "Moment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DC6934191C96C800779014 /* Debug */,
+				D3DC6935191C96C800779014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3DC6936191C96C800779014 /* Build configuration list for PBXNativeTarget "MomentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DC6937191C96C800779014 /* Debug */,
+				D3DC6938191C96C800779014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3DC68F9191C96C800779014 /* Project object */;
+}
