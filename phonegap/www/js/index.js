@@ -1,14 +1,18 @@
 var app = {
     initialize: function() {
         this.bindEvents();
+        this.activatePopup();
     },
     bindEvents: function() {
-        document.addEventListener("deviceready", this.centerPopup, false);
+        FastClick.attach(document.body);
     },
-    centerPopup: function() {
+    activatePopup: function() {
         $("#popup")
             .vAlign()
-            .hAlign()
-            .fadeIn();
+            .hAlign();
+
+        setTimeout(function() {
+            $("#popup").addClass("visible");
+        }, 1000);
     }
 };

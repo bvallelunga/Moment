@@ -1,7 +1,12 @@
 #popup {
     width: 85%;
     text-align: center;
-    display: none;
+    opacity: 0;
+    transition: opacity 1s ease 0;
+}
+
+#popup.visible {
+    opacity: 1;
 }
 
 #popup > img {
@@ -33,6 +38,7 @@
     display: block;
     border-radius: 3px;
     font-weight: bold;
+    border-bottom: solid 3px rgba(0, 0, 0, 0.3);
 }
 
 #popup .button:active {
