@@ -6,8 +6,4 @@ app.activatePopup = function() {
     $("#popup")
         .vAlign()
         .hAlign();
-
-    setTimeout(function() {
-        $("#popup").addClass("visible");
-    }, 1000);
 }

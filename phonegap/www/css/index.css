@@ -1,12 +1,6 @@
 #popup {
     width: 85%;
     text-align: center;
-    opacity: 0;
-    transition: opacity 1s ease 0;
-}
-
-#popup.visible {
-    opacity: 1;
 }
 
 #popup > img {
@@ -33,14 +27,15 @@
     padding: 15px 0;
     width: 100%;
     text-align: center;
-    color: #fff;
-    background: #3e3e3e;
+    color: #3e3e3e;
+    background: #fff;
     display: block;
     border-radius: 3px;
     font-weight: bold;
-    border-bottom: solid 3px rgba(0, 0, 0, 0.3);
+    border: solid 2px #3e3e3e;
 }
 
 #popup .button:active {
-    background: #2f2f2f;
+    color: #fff;
+    background: #3e3e3e;
 }

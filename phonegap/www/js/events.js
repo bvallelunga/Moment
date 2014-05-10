@@ -3,7 +3,7 @@ app.pageInitialize = function() {
 };
 
 app.pageBindEvents = function() {
-    $("#header .post").click(this.openCamera);
+    $("#header .post").click(this.openLibrary);
 };
 
 app.eventsAlign = function() {
@@ -25,19 +25,36 @@ app.eventsAlign = function() {
     });
 };
 
-app.openCamera = function() {
-    navigator.camera.getPicture(onSuccess, onFail, {
+app.openLibrary = function() {
+    /*
+    navigator.camera.getPicture(function(img) {
+         $("#events .event .image")
+            .eq(0)
+            .css("background-image", "url(data:image/jpeg;base64," + img + ")");
+    }, function(error) {
+        console.log(error);
+    }, {
         quality: 100,
         allowEdit: true,
-        destinationType: Camera.DestinationType.FILE_URI,
+        encodingType: Camera.EncodingType.JPEG,
+        destinationType: Camera.DestinationType.DATA_URL,
         sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
     });
+    */
 
-    function onSuccess(imageData) {
-        alert('success because: ' + imageData);
-    }
-
-    function onFail(message) {
-        alert('Failed because: ' + message);
-    }
+    window.imagePicker.getPictures(
+        function(results) {
+            for (var i = 0; i < results.length; i++) {
+                $("#events .event .image")
+                    .eq(i)
+                    .css("background-image", "url(" + results[i] + ")");
+            }
+        }, function (error) {
+            alert('Error: ' + error);
+        }, {
+            maximumImagesCount: 10,
+            width: 800,
+            quality: 100
+        }
+    );
 }
