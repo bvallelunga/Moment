@@ -70,7 +70,7 @@ body {
     right: 0;
     color: #3e3e3e;
     background: #fff;
-    padding: 25px 15px 10px 15px;
+    padding: 15px 0 0 0;
     box-shadow: 0 3px 0 rgba(255, 255, 255, 0.4);
 }
 
@@ -87,17 +87,17 @@ body {
     margin: 0 auto;
     text-align: center;
     font-family: Shift;
+    padding: 10px 0;
 }
 
-#header .menu,
-#header .post {
+#header .icon {
     position: absolute;
     top: 0;
     font-size: 22px;
+    padding: 10px 15px;
 }
 
-#header .menu:active,
-#header .post:active {
+#header .icon:active {
     color: #4586F5;
 }
 
