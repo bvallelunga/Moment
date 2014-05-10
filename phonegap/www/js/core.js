@@ -20,5 +20,15 @@ var app = {
         if(this.pageBindEvents) {
             this.pageBindEvents();
         }
+    },
+    facebook: {
+        login: function() {
+
+        }
+    },
+    twitter: {
+        login: function() {
+
+        }
     }
 };
