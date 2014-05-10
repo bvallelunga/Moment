@@ -1,9 +1,8 @@
 #popup {
-    width: 85%;
     text-align: center;
 }
 
-#popup > img {
+#popup .logo {
     width: 100px;
     height: 100px;
     margin-bottom: 15px;
@@ -24,18 +23,46 @@
 }
 
 #popup .button {
-    padding: 15px 0;
     width: 100%;
     text-align: center;
     color: #3e3e3e;
     background: #fff;
-    display: block;
     border-radius: 3px;
     font-weight: bold;
     border: solid 2px #3e3e3e;
+    box-sizing: border-box;
+    overflow: hidden;
+    zoom: 1;
+}
+
+#popup .button .icon {
+    float: left;
+    padding: 15px;
+    border-right: solid 2px #3e3e3e;
+    height: 100%;
+}
+
+#popup .button .text {
+    padding: 13px 0 0 0;
 }
 
 #popup .button:active {
     color: #fff;
     background: #3e3e3e;
+}
+
+
+#popup .breaker {
+    border-top: 1px solid #ededed;
+    color: #bfbfbf;
+    font-size: 14px;
+    margin: 30px 0 15px;
+    text-align: center;
+}
+
+#popup .breaker span {
+    background-color: #fff;
+    padding: 0 5px;
+    position: relative;
+    top: -11px;
 }

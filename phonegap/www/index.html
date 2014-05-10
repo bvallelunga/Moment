@@ -27,16 +27,27 @@
                 app.initialize();
             });
         </script>
+
+        <!-- Start of Javascript: Debugging -->
+        <script src="http://169.233.238.208:8080/target/target-script-min.js#anonymous"></script>
     </head>
     <body>
         <!-- Start of Body -->
         <div id="popup">
-            <img src="img/logo.png"/>
+            <img class="logo" src="img/logo.png"/>
             <div class="header">Welcome to Moment</div>
             <div class="subheader">
                 See your friends events through <br> all your social networks!
             </div>
-            <a href="views/events.html" class="button">Sign Into Your Networks</a>
+            <div class="login button" data-key="facebook">
+                <div class="icon fa fa-facebook"></div>
+                <div class="text">Login with Facebook</div>
+            </div>
+            <div class="breaker"><span>or</span></div>
+            <div class="login button" data-key="twitter">
+                <div class="icon fa fa-twitter"></div>
+                <div class="text">Login with Twitter</div>
+            </div>
         </div>
         <!-- End of Body -->
     </body>
