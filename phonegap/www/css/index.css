@@ -12,7 +12,7 @@
     font-size: 25px;
     font-weight: bold;
     color: #3e3e3e;
-    text-shadow: 0 1px 0 #ededed;
+    text-shadow: 0 1px 0 #cecece;
 }
 
 
@@ -59,7 +59,7 @@
 }
 
 #popup .button .text {
-    padding: 13px 0 0 0;
+    padding: 15px 0 0 0;
 }
 
 #popup .button:active {

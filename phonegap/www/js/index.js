@@ -1,12 +1,15 @@
 app.pageInitialize = function() {
-    this.activatePopup();
+    this.facebook.status(function(loggedIn) {
+        if(loggedIn) {
+            window.location.href = "views/events.html";
+        } else {
+            app.activatePopup();
+        }
+    });
 };
 
 app.pageBindEvents = function() {
-    $(".button").click(function() {
-        $(this).toggleClass("activated");
-        app.activateLogin($(this).data("key"));
-    });
+    $(".button").click(this.activateLogin);
 }
 
 app.activatePopup = function() {
@@ -15,8 +18,19 @@ app.activatePopup = function() {
         .hAlign();
 }
 
-app.activateLogin = function(type) {
-    if(type in this) {
-        this[type].login();
+app.activateLogin = function() {
+    var button = $(this);
+    var type = $(this).data("key");
+
+    if(type in app) {
+        button.toggleClass("activated");
+
+        app[type].login(function(loggedIn) {
+            if(loggedIn) {
+                window.location.href = "views/events.html";
+            } else {
+                button.toggleClass("activated");
+            }
+        });
     }
 }

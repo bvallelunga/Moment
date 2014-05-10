@@ -30,7 +30,14 @@
     <preference name="permissions"                value="device"/>
 
     <!-- Customize your app and platform with the preference element. -->
+    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.4.0">
+        <param name="APP_ID" value="290377841130709" />
+        <param name="APP_NAME" value="Moment" />
+    </gap:plugin>
 
+    <feature name="org.apache.cordova.facebook.Connect">
+        <param name="ios-package" value="FacebookConnectPlugin" />
+    </feature>
 
     <!-- <preference name="phonegap-version"      value="3.4.0" /> -->      <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
