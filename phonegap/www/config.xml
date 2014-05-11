@@ -39,6 +39,10 @@
         <param name="ios-package" value="FacebookConnectPlugin" />
     </feature>
 
+    <feature name="org.apache.cordova.facebook.Connect">
+        <param name="android-package" value="org.apache.cordova.facebook.ConnectPlugin" />
+    </feature>
+
     <!-- <preference name="phonegap-version"      value="3.4.0" /> -->      <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="handset" />        <!-- all: possible values handset, tablet, or universal -->

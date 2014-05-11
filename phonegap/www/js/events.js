@@ -4,6 +4,7 @@ app.pageInitialize = function() {
 
 app.pageBindEvents = function() {
     $("#header .post").click(this.openLibrary);
+    $("#header .menu").click(this.logout);
 };
 
 app.eventsAlign = function() {
@@ -25,24 +26,14 @@ app.eventsAlign = function() {
     });
 };
 
-app.openLibrary = function() {
-    /*
-    navigator.camera.getPicture(function(img) {
-         $("#events .event .image")
-            .eq(0)
-            .css("background-image", "url(data:image/jpeg;base64," + img + ")");
-    }, function(error) {
-        console.log(error);
-    }, {
-        quality: 100,
-        allowEdit: true,
-        encodingType: Camera.EncodingType.JPEG,
-        destinationType: Camera.DestinationType.DATA_URL,
-        sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
+app.logout = function() {
+    app.facebook.logout(function() {
+        app.changePage("index.html");
     });
-    */
+}
 
-    window.imagePicker.getPictures(
+app.openLibrary = function() {
+    imagePicker.getPictures(
         function(results) {
             for (var i = 0; i < results.length; i++) {
                 $("#events .event .image")

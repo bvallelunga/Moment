@@ -1,7 +1,7 @@
 app.pageInitialize = function() {
     this.facebook.status(function(loggedIn) {
         if(loggedIn) {
-            window.location.href = "views/events.html";
+            window.location.replace("events.html");
         } else {
             app.activatePopup();
         }
@@ -23,14 +23,14 @@ app.activateLogin = function() {
     var type = $(this).data("key");
 
     if(type in app) {
-        button.toggleClass("activated");
+        button.addClass("activated");
 
         app[type].login(function(loggedIn) {
             if(loggedIn) {
-                window.location.href = "views/events.html";
-            } else {
-                button.toggleClass("activated");
+                window.location.replace("events.html");
             }
+
+            button.removeClass("activated");
         });
     }
 }
