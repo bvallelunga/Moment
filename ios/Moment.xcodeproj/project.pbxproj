@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D37A6A2D1920AC52008DD760 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D37A6A2C1920AC52008DD760 /* Logo.png */; };
 		D3DC6905191C96C800779014 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DC6904191C96C800779014 /* Foundation.framework */; };
 		D3DC6907191C96C800779014 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DC6906191C96C800779014 /* CoreGraphics.framework */; };
 		D3DC6909191C96C800779014 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DC6908191C96C800779014 /* UIKit.framework */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D37A6A2C1920AC52008DD760 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		D3DC6901191C96C800779014 /* Moment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DC6904191C96C800779014 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3DC6906191C96C800779014 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -203,6 +205,7 @@
 		D3DC693B191C99EC00779014 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				D37A6A2C1920AC52008DD760 /* Logo.png */,
 				D3DC693C191C99EC00779014 /* Icon-40.png */,
 				D3DC693D191C99EC00779014 /* Icon-40@2x.png */,
 				D3DC693E191C99EC00779014 /* Icon-60@2x.png */,
@@ -281,6 +284,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Brian Vallelunga";
 				TargetAttributes = {
+					D3DC6900191C96C800779014 = {
+						DevelopmentTeam = R5K2X99B7E;
+					};
 					D3DC6921191C96C800779014 = {
 						TestTargetID = D3DC6900191C96C800779014;
 					};
@@ -310,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D37A6A2D1920AC52008DD760 /* Logo.png in Resources */,
 				D3DC6959191C99EC00779014 /* Splash.psd in Resources */,
 				D3DC6954191C99EC00779014 /* iTunesArtwork@2x in Resources */,
 				D3DC6951191C99EC00779014 /* Icon.png in Resources */,
@@ -472,10 +479,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Moment/Moment-Prefix.pch";
 				INFOPLIST_FILE = "Moment/Moment-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -485,10 +495,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Moment/Moment-Prefix.pch";
 				INFOPLIST_FILE = "Moment/Moment-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
