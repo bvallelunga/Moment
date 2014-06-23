@@ -1,68 +1,64 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<div>
-			asfasdfasdf
-			<img src="" />
-		</div>
-		<!-- Start of Meta -->
-		<title>Moment</title>
-		<meta charset="utf-8" />
-		<meta name="format-detection" content="telephone=no" />
-		<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-		<meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <head>
+        <!-- Start of Meta -->
+        <title>Moment</title>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-		<!-- Start of CSS -->
-		<link rel="stylesheet" type="text/css" href="css/core.css" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+        <!-- Start of CSS -->
+        <link rel="stylesheet" type="text/css" href="css/core.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/icons.css" />
 
-		<!-- Start of Javascript: General -->
-		<script type="text/javascript" src="phonegap.js"></script>
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/fastclick.js"></script>
-		<script type="text/javascript" src="js/center.js"></script>
-		<script type="text/javascript" src="js/core.js"></script>
+        <!-- Start of Javascript: General -->
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/fastclick.js"></script>
+        <script type="text/javascript" src="js/center.js"></script>
+        <script type="text/javascript" src="js/core.js"></script>
 
-		<!-- Start of Javascript: Facebook -->
+        <!-- Start of Javascript: Facebook -->
 		<script src="cdv-plugin-fb-connect.js"></script>
 		<script src="facebook-js-sdk.js"></script>
 
-		<!-- Start of Javascript: Page Specific -->
-		<script type="text/javascript" src="js/index.js"></script>
-		<script type="text/javascript">
-			setTimeout(function() {
-				app.initialize();
-			}, 100);
-		</script>
+        <!-- Start of Javascript: Page Specific -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            setTimeout(function() {
+                app.initialize();
+            }, 100);
+        </script>
 
-		<!-- Start of Javascript: Debugging -->
-		<script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>
-	</head>
-	<body>
-		<!-- Start of Body -->
-		<div id="popup">
-			<img class="logo" src="img/logo.png"/>
-			<div class="header">Welcome to Moment</div>
-			<div class="subheader">
-				See your friends events through <br> all your social networks!
-			</div>
-			<div class="button" data-key="facebook">
-				<div class="icon">
-					<div class="logo fa fa-facebook"></div>
-					<div class="spinner fa fa-refresh fa-spin"></div>
-				</div>
-				<div class="text">Login with Facebook</div>
-			</div>
-			<div class="breaker"><span>or</span></div>
-			<div class="button" data-key="twitter">
-				<div class="icon">
-					<div class="logo fa fa-twitter"></div>
-					<div class="spinner fa fa-refresh fa-spin"></div>
-				</div>
-				<div class="text">Login with Twitter</div>
-			</div>
-		</div>
-		<!-- End of Body -->
-	</body>
+        <!-- Start of Javascript: Debugging -->
+        <script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>
+    </head>
+    <body>
+        <!-- Start of Body -->
+        <div id="popup">
+            <img class="logo" src="img/logo.png"/>
+            <div class="header">Welcome to Moment</div>
+            <div class="subheader">
+                See your friends events through <br> all your social networks!
+            </div>
+            <div class="button" data-key="facebook">
+                <div class="icon">
+                    <div class="logo fa fa-facebook"></div>
+                    <div class="spinner fa fa-refresh fa-spin"></div>
+                </div>
+                <div class="text">Login with Facebook</div>
+            </div>
+            <div class="breaker"><span>or</span></div>
+            <div class="button" data-key="twitter">
+                <div class="icon">
+                    <div class="logo fa fa-twitter"></div>
+                    <div class="spinner fa fa-refresh fa-spin"></div>
+                </div>
+                <div class="text">Login with Twitter</div>
+            </div>
+        </div>
+        <!-- End of Body -->
+    </body>
 </html>
